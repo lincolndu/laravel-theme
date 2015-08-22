@@ -1,0 +1,463 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*Index page csss*/
+/*Header section css Start*/
+.logo, .social_icon, .search{
+	margin: 20px 0;
+}
+.logo{
+	float: left;
+	width: 10%;
+}
+.logo img{
+	width: 100%;
+}
+.search{
+	float: right;
+	width: 40%;
+	margin: 50px 0;
+	padding: 0;
+}
+.search input[type=text]{
+	margin: 0;
+	padding: 6px;
+}
+.button-search{
+	background: url('img/button-search.png') center no-repeat;
+	width:50px !important;
+	border-radius: 5px;
+	margin: 0 0 0 -5px;
+	padding: 5px;
+}
+.social_icon{
+	float: right;
+	width: 20%;
+	margin: 50px 0; 
+}
+.social_icon img{
+	width:30px;
+	height: 30px;
+	float: right;
+	margin:5px;
+}
+
+/*INDEX PAGE Header section css End*/
+
+/*Main menu section css Start*/
+.nav {
+	width: 100%;
+	background: #0e5881;
+	height: 51px;
+	border-radius: 5px;
+}
+.nav .current{
+	background: #cd0000;
+	border-radius: 5px;
+}
+.nav ul {
+	margin: 0;
+	padding: 0;
+	list-style:none;
+}
+.nav ul li{
+	float: left;
+	padding: 15px;
+	font-size: 16px;
+	color: #fff;
+	border-right: 1px solid #fff;
+}
+.nav ul li:last-child{
+	border-right: 0px;
+}
+.nav ul li:hover{
+}
+.nav ul li a{
+	font-size: 18px;
+	color: #fff;
+}
+.nav ul li a:hover{
+	text-decoration: none;
+}
+
+/*Slider Design CSS Start*/
+.slider{}
+.image_slider{
+	width: 100%;
+	margin-bottom: 20px;
+	position: relative;
+}
+.image_slider img{
+	width: 100%;
+	height: 400px;
+}
+.image_slider h2{
+	position: absolute;
+	margin: -200px 150px;
+}
+.image_slider h2 a{
+	color: #cd0000;
+	text-decoration: none;
+}
+/*Slider Design CSS End*/
+
+/*Main content Design CSS Start*/
+.article{
+	width: 650px;
+	float: left;
+	margin: 10px 0;
+	padding: 0 10px 0 0;
+}
+.post{
+	padding: 0 20px 10px 0;
+	min-height: 200px;
+}
+.post img{
+	width: 250px;
+	height: 150px;
+	margin: 0 10px 10px 0;
+	float: left;
+}
+.article .post h2{
+	font-size: 25px;
+	color: #cd0000 !important;
+	margin: 0;
+	padding: 0 0 10px 0 !important;
+}
+.post p{
+	font-size: 16px;
+}
+.post .more{}
+.post .more a{}
+
+.right_sidebar{
+	width: 300px;
+	float: right;
+	margin: 10px 0;
+}
+.right_sidebar .add{
+	width: 100%;
+}
+.right_sidebar .add img{
+	width: 100%;
+}
+.right_sidebar .social h2{
+	margin: 10px 0;
+}
+.right_sidebar .social ul{
+	widows: 280px;
+	font-size: 18px;
+	margin: 0;
+	padding: 0 0 0 20px;
+}
+.right_sidebar ul li{
+	padding: 5px 0;
+	border-bottom: 1px solid;
+}
+.right_sidebar ul li:last-child{
+	border-bottom: 0;
+}
+.right_sidebar ul li a{}
+
+
+/*Main content Design CSS End*/
+
+
+
+/*Dashboard css Here*/
+.menubar{
+	float: left;
+	border-radius: 5px;
+	position: relative;
+}
+.area_hide{
+}
+.area_hide p{
+	position: absolute;
+	top: -3px;
+	right: -3px;
+	background: #ddd;
+	color: #000;
+	padding: 12px;
+	font-size: 16px;
+	border-radius: 50px;
+	cursor: pointer;
+}
+.menu_list{display: none;}
+/*Dashboard header design*/
+.left_dash{
+	width: 70%;
+	margin: 20px 0px;
+	float: left;
+	background: #ED145B;}
+.left_dash ul {
+	list-style:none;
+	margin: 0;
+}
+.left_dash ul li {
+	float: left;
+	font-size: 18px;
+	margin: 10px 5px;
+	padding: 10px;
+	color: #fff;
+	cursor: pointer;
+	border: 1px solid;
+}
+.left_dash ul li:hover, .left_dash ul .active{
+	background: #F36A97;
+}
+
+/*Footer Design CSS*/
+.footer{
+	width: 100%;
+	height: 50px;
+	background: #ddd;
+	margin: 20px 0;
+	padding: 20px 0;
+}
+.footer .copyright{
+	width: 400px;
+	float: left;
+	padding: 18px 0;
+	font-size: 16px;
+}
+.footer .developer{
+	width: 400px;
+	float: right;
+}
+.footer .developer h2{
+	text-align: right;
+}
+.footer .developer h2 a{
+	
+}
+.footer .developer h2 a:hover{
+	text-decoration: none;
+	color: #cd0000;
+}
+
+/*Footer Design CSS End*/
+
+
+
+/*Dashboard right design css*/
+.right_dash {
+	float: right;
+	width: 10%;
+}
+.right_dash ul {
+	float: right;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.right_dash ul li {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+.right_dash ul li a{}
+.right_dash ul li a:hover{
+	text-decoration: none;
+}
+.right_dash ul li img{
+	width: 50px;
+	height: 50px;
+}
+#hide{
+	display: none;
+}
+
+
+/*Menubar design css start*/
+.menubar{
+	width: 25%;
+	background:#ED145B;
+	margin-right: 2%;
+}
+.author img{
+	width: 100px;
+	height: 100px;
+	margin:20px 100px;
+}
+.items{}
+.items ul {
+	margin: 5px 0px 20px;
+	padding: 0;
+	list-style:none;
+}
+.items ul li {
+	font-size: 18px;
+	padding:5px 20px;
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+	color: #fff;
+	cursor: pointer;
+}
+.items ul li:last-child{border-bottom: 0px;}
+.items ul li:hover{
+	background: #F36A97;
+}
+
+/*Menubar design css end*/
+
+
+
+/*Text area design with add new post and edit post*/
+.main_post{
+	width: 65%;
+	margin: 10px 0;
+	float: left;
+	background: #ED145B;
+	padding: 30px;
+	color: #fff;
+
+}
+.table a{
+	color: #fff;
+}
+.new_post, .edit_post{
+	width: 100%;
+}
+.edit_post{display: none;}
+.new_post input, .edit_post input, .new_post textarea, .edit_post textarea{
+	width: 90%;
+}
+.new_post #submit, .register #submit, .edit_post #submit{
+	margin: 5px;
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 16px;
+	color: #fff;
+	background: #ED145B;
+}
+
+/*All post design css start*/
+.all_post{
+	display: none;
+}
+/*All post design css end*/
+
+/*User Register Area design start*/
+.register {
+	width: 100%;
+	display: none;
+}
+.register input, .register textarea{
+	width: 50%;
+}
+
+/*User Register Area design End*/
+
+/*All Users Area design*/
+.all_users{display: none;}
+.edit_users{display: none;}
+
+
+
+/*Slider style*/
+.captionOrange, .captionBlack
+{
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 4px;
+}
+.captionOrange
+{
+    background: #EB5100;
+    background-color: rgba(235, 81, 0, 0.6);
+}
+.captionBlack
+{
+	font-size:16px;
+    background: #000;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+a.captionOrange, A.captionOrange:active, A.captionOrange:visited
+{
+	color: #ffffff;
+	text-decoration: none;
+}
+a.captionOrange:hover
+{
+    color: #eb5100;
+    text-decoration: underline;
+    background-color: #eeeeee;
+    background-color: rgba(238, 238, 238, 0.7);
+}
+.bricon
+{
+    background: url(img/browser-icons.png);
+}
+
+/* jssor slider arrow navigator skin 05 css */
+/*
+.jssora05l                  (normal)
+.jssora05r                  (normal)
+.jssora05l:hover            (normal mouseover)
+.jssora05r:hover            (normal mouseover)
+.jssora05l.jssora05ldn      (mousedown)
+.jssora05r.jssora05rdn      (mousedown)
+*/
+.jssora05l, .jssora05r {
+    display: block;
+    position: absolute;
+    /* size of arrow element */
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: url(img/a17.png) no-repeat;
+    overflow: hidden;
+}
+.jssora05l { background-position: -10px -40px; }
+.jssora05r { background-position: -70px -40px; }
+.jssora05l:hover { background-position: -130px -40px; }
+.jssora05r:hover { background-position: -190px -40px; }
+.jssora05l.jssora05ldn { background-position: -250px -40px; }
+.jssora05r.jssora05rdn { background-position: -310px -40px; }
+
+
+
+
+/* jssor slider bullet navigator skin 01 css */
+/*
+.jssorb01 div           (normal)
+.jssorb01 div:hover     (normal mouseover)
+.jssorb01 .av           (active)
+.jssorb01 .av:hover     (active mouseover)
+.jssorb01 .dn           (mousedown)
+*/
+.jssorb01 {
+    position: absolute;
+}
+.jssorb01 div, .jssorb01 div:hover, .jssorb01 .av {
+    position: absolute;
+    /* size of bullet elment */
+    width: 12px;
+    height: 12px;
+    filter: alpha(opacity=70);
+    opacity: .7;
+    overflow: hidden;
+    cursor: pointer;
+    border: #000 1px solid;
+}
+.jssorb01 div { background-color: gray; }
+.jssorb01 div:hover, .jssorb01 .av:hover { background-color: #d3d3d3; }
+.jssorb01 .av { background-color: #fff; }
+.jssorb01 .dn, .jssorb01 .dn:hover { background-color: #555555; }
+
+
+/*Single page design Start*/
+.single_post{
+	width: 100%;
+}
+.single_post img{
+	width: 80%;
+	margin: 0 10% 20px;
+}
+.single_post h2{}
+.single_post p{font-size: 16px;}
+
