@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Aug 22, 2015 at 05:25 PM
+-- Generation Time: Aug 23, 2015 at 08:25 AM
 -- Server version: 5.6.25-0ubuntu0.15.04.1
 -- PHP Version: 5.6.4-4ubuntu6.2
 
@@ -19,6 +19,35 @@ SET time_zone = "+00:00";
 --
 -- Database: `laravel-theme`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `comments`
+--
+
+CREATE TABLE IF NOT EXISTS `comments` (
+`id` int(11) NOT NULL,
+  `post_id` int(11) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `website` varchar(100) NOT NULL,
+  `comment` text NOT NULL,
+  `updated_at` int(11) NOT NULL,
+  `created_at` int(11) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `comments`
+--
+
+INSERT INTO `comments` (`id`, `post_id`, `name`, `email`, `website`, `comment`, `updated_at`, `created_at`) VALUES
+(1, 0, 'lincoln', 'lincolndu@yahoo.com', 'http://coderstime.com', 'This is my first comment.....', 1440294732, 1440294732),
+(2, 0, 'mahmud', 'mahmuddu@gmail.com', 'http://coderstime.com', 'This is test comments', 1440294853, 1440294853),
+(3, 0, 'mahmud', 'lincolndu@yahoo.com', 'http://coderstime.com', 'this comment with post id', 1440295697, 1440295697),
+(4, 18, 'lincoln', 'lincolndu@yahoo.com', 'http://coderstime.com', 'Post id ', 1440295778, 1440295778),
+(5, 18, 'dhaka', 'dhaka@gmail.com', 'http://coderstime.com', 'নিবার বৃষ্টিও হবে বলে অধিদপ্তরের পূর্বাভাসে বলা হয়। গতকাল ছুটির দিন হওয়ায় এবং অফিস-আদালত, শিক্ষাপ্রতিষ্ঠান বন্ধ থাকায় জলাবদ্ধতায় স্বাভাবিকভাবেই জনদুর্ভোগ কিছুটা কম হয়েছে। কিন্তু নিম্ন আয়ের মানুষজন, বিশেষ করে রিকশা, অটোরিকশাচালকদের মতো শ্রমজীবীরা জীবিকার তাগিদে বা অনিবার্য প্রয়োজনে যাঁরা পথে নেমেছেন, তাঁদের দুর্ভোগে পড়তে হয়েছে। অনেক এলাকায় খোলা ছিল দোকানপাট। কাঁচাবাজারও। জলাবদ্ধতার কারণে ক্রেতা-বিক্রেতা সবাইকেই পড়তে হয় চরম ভোগান্তিতে। এ ছাড়া কিছু কোচিং সেন্টার এবং সংগীত ও অঙ্কনের প্রতিষ্ঠানে আসা শিক্ষার্থীরাও সমস্যায় পড়ে।গার্ডেন রোড: ঘরের দুয়ারে নোংরা পানি। তা এড়িয়ে চলতে শিশুদের কসরত। দৃশ্যটি ব', 1440295814, 1440295814),
+(6, 17, 'asraf', 'asraf@gmail.com', 'http://banglatime24.com', 'কৃষকদের ঐক্যবদ্ধ করার ওপর জোর দিলেন জনপ্রশাসন মন্ত্রী ও আওয়ামী লীগের সাধারণ সম্পাদক সৈয়দ আশরাফুল ইসলাম। তিনি বলেন, ‘কৃষকেরা ঐক্যবদ্ধ হলেই আমরা শক্তিশালী হব।’ আজ শনিবার দুপুরে জাতীয় প্রেসক্লাব মিলনায়তনে কৃষক লীগের শোক দিবসের আলোচনা সভায় বক্তব্য রাখেন সৈয়দ আশরাফ। কৃষক লীগের নেতা কর্মীদের উদ্দেশে সৈয়দ আশরাফুল ইসলাম বলেন, ‘আপনাদের মূল দায়িত্ব কৃষকদের দাবি তুলে ধরা। বেশির ভাগ গ্রামের মানুষই কৃষক। সেই জন্য তাদের কাছে যেতে হবে। সবাইকে ঐক্যবদ্ধ করতে হবে।’ জনপ্রশাসন মন্ত্রী আরও বলেন, ‘কৃষিবিদরা যেমন কিংবদন্তি, কৃষকরাও তেমন কিংবদন্তি। সারা বাংলায় কৃষক লীগের সংগঠন গড়ে তুলতে হবে। কৃষকের সঙ্গে যোগাযোগ রাখতে হবে। তাদের ঐক্যবদ্ধ রাখতে হবে। পাশাপাশি অন্যান্য সংগঠনকেও শক্তিশালী করতে হবে। তাহলেই আমরা শক্তিশালী হব।’ প্রধানমন্ত্রী শেখ হাসিনার নেতৃত্বে শোককে শক্তিতে পরিণত করে বাংলাদেশ আরও এগিয়ে যাবে বলেও মন্তব্য করেন আওয়ামী লীগের সাধারণ সম্পাদক। সভায় আওয়ামী লীগের যুগ্ম সাধারণ সম্পাদক মাহবুব উল আলম হানিফও বক্তব্য রাখেন। সংগঠনের সভাপতি মোতাহার হোসেন মোল্লার সভাপতিত্বে এ সভায় অন্যান্যের মধ্যে খাদ্যমন্ত্রী কামরুল ইসলাম, আওয়ামী লীগের সাংগঠনিক সম্পাদক আ ফ ম বাহাউদ্দিন নাছিম, স্বাস্থ্য ও জনসংখ্যা বিষয়ক সম্পাদক বদিউজ্জামান ভূইয়া, কৃষক লীগের সাধারণ সম্পাদক খন্দকার শামসুল হক প্রমুখ উপস্থিত ছিলেন। ', 1440296195, 1440296195);
 
 -- --------------------------------------------------------
 
@@ -63,6 +92,12 @@ INSERT INTO `posts` (`id`, `title`, `category`, `photo`, `description`, `created
 --
 
 --
+-- Indexes for table `comments`
+--
+ALTER TABLE `comments`
+ ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `posts`
 --
 ALTER TABLE `posts`
@@ -72,6 +107,11 @@ ALTER TABLE `posts`
 -- AUTO_INCREMENT for dumped tables
 --
 
+--
+-- AUTO_INCREMENT for table `comments`
+--
+ALTER TABLE `comments`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT for table `posts`
 --
