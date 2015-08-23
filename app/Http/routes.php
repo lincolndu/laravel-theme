@@ -20,6 +20,7 @@ Route::any('dashboard', 'ThemeController@dashboard');
 
 /*New post*/
 Route::any('newpost', 'ThemeController@newpost');
+Route::any('comments', 'ThemeController@comments');
 
 /*Update post route*/
 Route::any('edit/{id}', 'ThemeController@edit');
@@ -29,3 +30,9 @@ Route::any('delete/{id}', 'ThemeController@delete');
 
 /*Singl page */
 Route::any('single/{id}', 'ThemeController@single');
+
+/*Gallery page*/
+Route::any('gallery', 'ThemeController@gallery');
+
+/*Gallery page*/
+Route::any('blog', 'ThemeController@blog');

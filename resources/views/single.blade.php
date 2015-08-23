@@ -1,27 +1,6 @@
 @extends('app')
 @section('content')
 
-
-<div class="container">
-	<div class="row">
-		<div class="col-md-12">
-			<div class="nav">
-				<ul>
-					<li class="current"><a href="/index.php">Home</a></li>
-					<li><a href="">All post</a></li>
-					<li><a href="">Contact</a></li>
-					<li><a href="">National</a></li>
-					<li><a href="">International</a></li>
-					<li><a href="">Gallery</a></li>
-					<li><a href="">login</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</div>
-
-
-
 <article>
 	<div class="container">
 		<div class="row">
@@ -33,7 +12,24 @@
 						<p>{{$posts->description}}</p>
 						
 					</div>
-
+					<div class="show_comment">
+						@foreach($comments as $comment)
+							<h3>Name : {{$comment->name}}</h3>
+							<p>Comments : {{$comment->comment}}</p>
+						@endforeach
+					</div>
+			<!--Comments Section-->
+					<div class="comment">
+						<form action="/index.php/comments" method="post">
+							<input type="hidden" name="_token" value="{{csrf_token()}}">
+							<input type="hidden" name="post_id" value="{{$posts->id}}">
+							Your Name: <input type="text" name="name" id="" placeholder="Type your name">
+							Your Email: <input type="email" name="email" id="" placeholder="Type your email">
+							Website: <input type="website" name="website" id="" placeholder="type your valid website">
+							Comment: <textarea name="comment" id="" cols="30" rows="10"></textarea>
+							<input type="submit" value="Submit">
+						</form>
+					</div>
 
 				</div>
 			</div>

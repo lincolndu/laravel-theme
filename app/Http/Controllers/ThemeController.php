@@ -5,6 +5,7 @@ use App\Models\Post;
 use Illuminate\Http\Request;
 use DB;
 use Session;
+use App\Models\Comment;
 
 class ThemeController extends Controller{
 
@@ -15,8 +16,10 @@ class ThemeController extends Controller{
 		return view('index', $data);
 	}
 	public function single($id){
+
 		$data['posts']=Post::find($id);
 		$data['post']=Post::limit(10)->latest()->get();
+		$data['comments']=Comment::where('post_id', $id)->get();
 		return view('single', $data);
 	}
 
@@ -64,6 +67,29 @@ class ThemeController extends Controller{
 
 		Session::flash('success_msg', 'Your requested ID deleted successfully');
 		return redirect('dashboard');
+	}
+
+	public function gallery(){
+		$data['posts']=Post::limit(10)->latest()->get();
+		return view('gallery', $data);
+	}
+
+	public function blog(){
+		$data['posts']=Post::limit(10)->latest()->get();
+		return view('blog', $data);
+	}
+	
+	public function comments(Request $request){
+		$comment = new Comment;
+		$comment->post_id=$request->post_id;
+		$comment->name=$request->name;
+		$comment->email=$request->email;
+		$comment->website=$request->website;
+		$comment->comment=$request->comment;
+		$comment->save();
+
+		Session::flash('success_msg', 'Your comment successfully saved in our system');
+		return redirect()->back();
 	}
 
 

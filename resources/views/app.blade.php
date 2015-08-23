@@ -41,6 +41,30 @@
 </header>
 <!--Header part End-->
 
+<!--Main menu part start-->
+
+<div class="container">
+	<div class="row">
+		<h3>{{Session::get('success_msg')}}</h3>
+		<div class="col-md-12">
+			<div class="nav">
+				<ul>
+					<li class="current"><a href="/">Home</a></li>
+					<li><a href="">All post</a></li>
+					<li><a href="">Contact</a></li>
+					<li><a href="">National</a></li>
+					<li><a href="">International</a></li>
+					<li><a href="/index.php/gallery">Gallery</a></li>
+					<li><a href="/index.php/blog">Blog</a></li>
+					<li><a href="/login">login</a></li>
+					<li><a href="/index.php/dashboard">Dashboard</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!--Main menu part End-->
+
 
 @yield('content')
 
