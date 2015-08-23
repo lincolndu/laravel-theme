@@ -15,7 +15,9 @@
 					</div>
 					@endforeach
 
-				
+					<div class="pagination">
+						{!!$posts->render()!!}
+					</div>
 				</div>
 			</div>
 			<div class="col-md-4">

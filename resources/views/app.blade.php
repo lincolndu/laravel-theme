@@ -22,7 +22,7 @@
 		<div class="row">
 			<div class="col-md-6">
 				<div class="logo">
-					<a href="/index.php"><img src="/img/logo.jpg" alt=""></a>
+					<a href="/"><img src="/img/logo.jpg" alt=""></a>
 				</div>
 			</div>
 			<div class="col-md-6">
@@ -54,10 +54,10 @@
 					<li><a href="">Contact</a></li>
 					<li><a href="">National</a></li>
 					<li><a href="">International</a></li>
-					<li><a href="/index.php/gallery">Gallery</a></li>
-					<li><a href="/index.php/blog">Blog</a></li>
-					<li><a href="/login">login</a></li>
-					<li><a href="/index.php/dashboard">Dashboard</a></li>
+					<li><a href="/gallery">Gallery</a></li>
+					<li><a href="/blog">Blog</a></li>
+					<li><a href="/auth/login">login</a></li>
+					<li><a href="/dashboard">Dashboard</a></li>
 				</ul>
 			</div>
 		</div>

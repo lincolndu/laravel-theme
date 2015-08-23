@@ -70,12 +70,12 @@ class ThemeController extends Controller{
 	}
 
 	public function gallery(){
-		$data['posts']=Post::limit(10)->latest()->get();
+		$data['posts']=Post::paginate(5);
 		return view('gallery', $data);
 	}
 
 	public function blog(){
-		$data['posts']=Post::limit(10)->latest()->get();
+		$data['posts']=Post::paginate(10);
 		return view('blog', $data);
 	}
 	

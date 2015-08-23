@@ -104,7 +104,7 @@
 /*Slider Design CSS End*/
 
 /*Main content Design CSS Start*/
-.article{
+.article, .pagination{
 	width: 650px;
 	float: left;
 	margin: 10px 0;
@@ -482,6 +482,15 @@ article .gallery h2{
 	line-height: 25px;
 }
 
+.pagination ul {}
+.pagination ul li {
+
+}
+.pagination ul li span{}
+.pagination ul li a{
+	background: #ED145B;
+	padding: 10px 20px;}
+
 /*Gallery page design End*/
 
 /*Comment design Start*/
@@ -490,7 +499,7 @@ article .gallery h2{
 	margin-top: 50px;
 }
 .comment input, .comment textarea{
-	width: 100%;
+	width: 98%;
 }
 .comment input[type="website"]{
 	margin-bottom: 10px;

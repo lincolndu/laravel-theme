@@ -27,7 +27,8 @@
 					<ul>
 						<li class="home active">Home</li>
 						<li class="n_post">new post</li>
-						<li class="user_regist">Register</li>
+						<li class="user_regist"><a href="/auth/register">Register</a></li>
+						<li class="user_regist"><a href="/auth/logout">Logout</a></li>
 						<li><a href="/">index</a></li>
 						<li class="all_author menu_list">All Author</li>
 						<li class="edit_author menu_list">Author Edit panel</li>	
@@ -81,7 +82,7 @@
 <!--New post submit area Start-->
 				<div class="new_post">
 					<h2>Please Add your New post</h2>
-						<form action="/index.php/newpost" method="post" enctype="multipart/form-data">
+						<form action="/newpost" method="post" enctype="multipart/form-data">
 						<input type="hidden" name="_token" value="{{csrf_token()}}">
 
 						<div><h4>your title here</h4></div>
@@ -122,9 +123,9 @@
 			                @foreach($posts as $post)
 			                <tr>
 			                    <td>{{$num ++}}</td>
-			                    <td><a href="/index.php/single/{{$post->id}}">{{$post->title}}</a></td>
-			                    <td><a href="/index.php/edit/{{$post->id}}">Action</a></td>
-			                    <td><a onclick="return jsDelete()" href="/index.php/delete/{{$post->id}}">Delete</a></td>
+			                    <td><a href="/single/{{$post->id}}">{{$post->title}}</a></td>
+			                    <td><a href="/edit/{{$post->id}}">Action</a></td>
+			                    <td><a onclick="return jsDelete()" href="/delete/{{$post->id}}">Delete</a></td>
 			                </tr>
 			                 @endforeach
 			                
