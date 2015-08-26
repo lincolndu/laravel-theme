@@ -43,7 +43,7 @@
 						</a></li>
 						<li class="hide" ><a href="">author</a></li>
 						<li class="hide"><a href="">setting</a></li>
-						<li class="hide"><a href="">logout</a></li>
+						<li class="hide"><a href="/auth/logout">logout</a></li>
 					</ul>
 				</div>
 			</div>

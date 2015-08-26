@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use DB;
 use Session;
 use App\Models\Comment;
+use Auth;
+use Pagination;
 
 class ThemeController extends Controller{
 
@@ -33,7 +35,8 @@ class ThemeController extends Controller{
 		if ($request->isMethod('post')) {
 			$post= new Post();
 			$post->title=$request->title;
-			$post->category=$request->category;
+            $post->author=Auth::user()->username;			
+            $post->category=$request->category;
 			$post->photo=$request->file('photo')->getClientOriginalName();
 			$request->file('photo')->move(public_path(). '/photo/',$post->photo);
 

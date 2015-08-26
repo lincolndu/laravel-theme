@@ -67,6 +67,7 @@
 					<div class="post">
 						<img src="{{'/photo/'.$post->photo}}" alt="">
 						<h2><a href="/index.php/single/{{$post->id}}">{{$post->title}}</a></h2>
+						<p><a href="">{{$post->author}}</a></p>	
 						<p>{{str_limit($post->description, $limit=500)}}</p>
 						<div class="more"><a href="">read more</a></div>
 						

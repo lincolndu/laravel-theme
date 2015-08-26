@@ -15,6 +15,11 @@ Route::get('/', function () {
 });
 */
 
+Route::get('author', function () {
+    return Auth::user()->username;
+});
+
+
 Route::get('/', 'ThemeController@index');
 Route::any('dashboard', 'ThemeController@dashboard');
 
