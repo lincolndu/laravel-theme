@@ -245,13 +245,19 @@
 /*Dashboard right design css*/
 .right_dash {
 	float: right;
-	width: 10%;
+	width: 129px;
+	position: relative;
+	margin-top: 20px;
+
 }
 .right_dash ul {
-	float: right;
 	margin: 0;
-	padding: 0;
+	padding: 20px;
 	list-style: none;
+	background: #ddd;
+	position: absolute;
+	width: 53px;
+	border-radius: 10px;
 }
 .right_dash ul li {
 	font-size: 20px;
@@ -260,10 +266,11 @@
 .right_dash ul li a{}
 .right_dash ul li a:hover{
 	text-decoration: none;
+	color: #cd0000;
 }
 .right_dash ul li img{
 	width: 50px;
-	height: 50px;
+	height: 40px;
 }
 #hide{
 	display: none;
@@ -275,6 +282,7 @@
 	width: 25%;
 	background:#ED145B;
 	margin-right: 2%;
+	height: 650px;
 }
 .author img{
 	width: 100px;
@@ -307,7 +315,7 @@
 /*Text area design with add new post and edit post*/
 .main_post{
 	width: 65%;
-	margin: 10px 0;
+	margin: 0px auto;
 	float: left;
 	background: #ED145B;
 	padding: 30px;
@@ -317,14 +325,15 @@
 .table a{
 	color: #fff;
 }
-.new_post, .edit_post{
+
+.new_post{
 	width: 100%;
 }
-.edit_post{display: none;}
-.new_post input, .edit_post input, .new_post textarea, .edit_post textarea{
+
+.new_post input, .new_post textarea{
 	width: 90%;
 }
-.new_post #submit, .register #submit, .edit_post #submit{
+.new_post #submit, #submit{
 	margin: 5px;
 	padding: 10px;
 	border-radius: 5px;
@@ -339,20 +348,13 @@
 }
 /*All post design css end*/
 
-/*User Register Area design start*/
-.register {
-	width: 100%;
-	display: none;
-}
-.register input, .register textarea{
-	width: 50%;
-}
-
-/*User Register Area design End*/
-
 /*All Users Area design*/
 .all_users{display: none;}
 .edit_users{display: none;}
+.edit_users img{
+	width: 50px;
+	height: 50px;
+}
 
 
 
@@ -515,3 +517,11 @@ article .gallery h2{
 }
 /*Comment design End*/
 
+/*Login area Css*/
+.login_area{
+	width: 274px;
+	height: 300px;
+	background: #F7F7F7;
+}
+.login_area{}
+/*Login area Css End*/

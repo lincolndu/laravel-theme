@@ -21,21 +21,12 @@ $(document).ready(function(){
 	$(".home").click(function(){
 		$(".all_post").show();
 		$(".new_post").hide();
-		$(".register").hide();
 		$(".all_users").hide();
 		$(".edit_users").hide();
   });
 	$(".n_post").click(function(){
 		$(".new_post").show();
 		$(".all_post").hide();
-		$(".register").hide();
-		$(".all_users").hide();
-		$(".edit_users").hide();
-  });
-	$(".user_regist").click(function(){
-		$(".register").show();
-		$(".all_post").hide();
-		$(".new_post").hide();
 		$(".all_users").hide();
 		$(".edit_users").hide();
   });
@@ -43,7 +34,6 @@ $(document).ready(function(){
 		$(".all_users").show();
 		$(".new_post").hide();
 		$(".all_post").hide();
-		$(".register").hide();
 		$(".edit_users").hide();
   });
 
@@ -51,7 +41,6 @@ $(document).ready(function(){
 		$(".edit_users").show();
 		$(".new_post").hide();
 		$(".all_post").hide();
-		$(".register").hide();
 		$(".all_users").hide();
   });
 });

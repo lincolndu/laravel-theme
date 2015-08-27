@@ -1,0 +1,20 @@
+
+
+.edit_post{
+	width: 800px;
+	margin: 0 auto;
+	padding: 50px;
+	background: #ddd;
+}
+
+.edit_post input, .edit_post textarea{
+	width: 90%;
+}
+.edit_post #submit{
+	margin: 5px;
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 16px;
+	color: #fff;
+	background: #ED145B;
+}

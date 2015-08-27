@@ -27,8 +27,6 @@
 					<ul>
 						<li class="home active">Home</li>
 						<li class="n_post">new post</li>
-						<li class="user_regist"><a href="/auth/register">Register</a></li>
-						<li class="user_regist"><a href="/auth/logout">Logout</a></li>
 						<li><a href="/">index</a></li>
 						<li class="all_author menu_list">All Author</li>
 						<li class="edit_author menu_list">Author Edit panel</li>	
@@ -42,7 +40,7 @@
 						<img src="/img/author.jpg"class="img-circle" id="author">
 						</a></li>
 						<li class="hide" ><a href="">author</a></li>
-						<li class="hide"><a href="">setting</a></li>
+						<li class="hide"><a href="/author_update">setting</a></li>
 						<li class="hide"><a href="/auth/logout">logout</a></li>
 					</ul>
 				</div>
@@ -63,7 +61,6 @@
 					<li class="home">Dashboard</li>
 					<li class="n_post">Add new post</li>
 					<li class="home">All post</li>
-					<li class="user_regist">Register</li>
 					<li class="all_author">All Author</li>
 					<li class="edit_author">Author Edit panel</li>
 				</ul>
@@ -133,47 +130,6 @@
 				</div>
 <!--All posts show area End-->
 
-<!--Users Registration area-->
-				<div class="register">
-					<h2>Users Register area</h2>
-						<form action="/register" method="post">
-
-						<div><h4>type your username</h4></div>
-						<input type="text" placeholder="user username" name="username">
-
-						<div><h4>Select your user role</h4></div>
-						<select name="userRole" id="role">
-							<option value="">Administrator</option>
-							<option value="">Admin</option>
-							<option value="">Moderator</option>
-							<option value="">Editor</option>
-							<option value="">Subscriber</option>
-						</select>
-
-						<div><h4>type your first name</h4></div>
-						<input type="text" placeholder="your first name" name="firstName">	
-
-						<div><h4>type your last name</h4></div>
-						<input type="text" placeholder="your last name" name="lastName">		
-
-						<div><h4>type your valid Email</h4></div>
-						<input type="email" placeholder="your email" name="email">		
-
-						<div><h4>type your valid Password</h4></div>
-						<input type="password" placeholder="type your password" name="password">	
-
-						<div><h4>upload your photo</h4></div>
-						<input type="file" placeholder="select your photo" name="photo">
-
-						<div><h4>Say something about yourself</h4></div>
-						<textarea name="about_user" id="about_user" cols="30" rows="6"></textarea>
-
-						<div class=""></div>
-						<input type="submit" value="Register" id="submit">
-
-						</form>					
-					</div>
-<!--Users Registration Area End-->
 
 <!--All users show area-->
 					<div class="all_users">
@@ -189,13 +145,13 @@
 			                <th>About</th>
 			                <tr>
 			                    <td>1</td>
-			                    <td><a href="">mahmuddu</a></td>
-			                    <td><a href="">Administrator</a></td>
-			                    <td><a href="">first name</a></td>
-			                    <td><a href="">last name</a></td>
-			                    <td><a href="">Email</a></td>
+			                    <td><a href="">{{$authors->username}}</a></td>
+			                    <td><a href="">{{$authors->userRole}}</a></td>
+			                    <td><a href="">{{$authors->firstName}}</a></td>
+			                    <td><a href="">{{$authors->lastName}}</a></td>
+			                    <td><a href="">{{$authors->email}}</a></td>
 			                    <td><a href="">Photo</a></td>
-			                    <td><a href="">I love Bangladesh</a></td>
+			                    <td><a href="">{{$authors->about_user}}</a></td>
 			                </tr> 
 			        </table>
 				</div>
@@ -215,17 +171,20 @@
 			                <th>About</th>
 			                <th>Action</th>
 			                <th>Action</th>
+
+			                <?php $a=1;?>
+
 			                <tr>
-			                    <td>1</td>
-			                    <td><a href="">mahmuddu</a></td>
-			                    <td><a href="">Administrator</a></td>
-			                    <td><a href="">first name</a></td>
-			                    <td><a href="">last name</a></td>
-			                    <td><a href="">Email</a></td>
-			                    <td><a href="">Photo</a></td>
-			                    <td><a href="">I love Bangladesh</a></td>
-			                    <td><a href="">Update</a></td>
-			                    <td><a href="">Delete</a></td>
+			                    <td>{{$a++}}</td>
+			                    <td><a href="">{{$authors->username}}</a></td>
+			                    <td><a href="">{{$authors->userRole}}</a></td>
+			                    <td><a href="">{{$authors->firstName}}</a></td>
+			                    <td><a href="">{{$authors->lastName}}</a></td>
+			                    <td><a href="">{{$authors->email}}</a></td>
+			                    <td><img src="{{'/photo/'.$authors->photo}}"></td>
+			                    <td><a href="">{{$authors->about_user}}</a></td>
+			                    <td><a href="/author_update">Update</a></td>
+			                    <td><a href="delete/{{$authors->id}}">Delete</a></td>
 			                </tr> 
 			        </table>
 				</div>

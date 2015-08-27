@@ -14,14 +14,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 */
-
-Route::get('author', function () {
-    return Auth::user()->username;
-});
-
-
 Route::get('/', 'ThemeController@index');
-Route::any('dashboard', 'ThemeController@dashboard');
+// Route::any('dashboard', 'ThemeController@dashboard');
 
 /*New post*/
 Route::any('newpost', 'ThemeController@newpost');
@@ -51,4 +45,14 @@ Route::get('auth/logout', 'Auth\AuthController@getLogout');
 // Registration routes...
 Route::get('auth/register', 'Auth\AuthController@getRegister');
 Route::post('auth/register', 'Auth\AuthController@postRegister');
+
+// Route::post('auth/auth_edit{id}', 'ThemeController@authUpdate');
 Route::get('home', 'ThemeController@index');
+
+
+Route::get('dashboard', ['middleware' => 'auth', 'uses' => 'ThemeController@dashboard']);
+// Route::get('/', ['middleware' => 'auth', 'uses' => 'ThemeController@index']);
+Route::get('author_update', function(){
+	$data['author']=Auth::user();
+	return view('auth.auth_edit', $data);
+});

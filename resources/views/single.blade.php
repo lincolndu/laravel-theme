@@ -9,6 +9,7 @@
 					<div class="single_post">
 							<a href=""><img src="{{'/photo/'.$posts->photo}}" alt=""></a>
 						<h2><a href="">{{$posts->title}}</a></h2>
+						<p><a href="">{{$posts->author}}</a></p>	
 						<p>{{$posts->description}}</p>
 						
 					</div>
